@@ -1,6 +1,6 @@
-struct PlayingCard {
+public struct PlayingCard {
     let rank: Rank
-    let suid: Suit
+    let suit: Suit
     
     public init(rank: Rank, suit: Suit) {
         self.rank = rank
@@ -20,8 +20,8 @@ public func ==(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
 
 extension PlayingCard: Comparable {}
 
-public func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
-    return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.suit > rhs.suit
+public func <(lhs: PlayingCard, rhs: PlayingCard) {
+    return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.rank < rhs.rank
 }
 
 // MARK: - CustomStringConvertible

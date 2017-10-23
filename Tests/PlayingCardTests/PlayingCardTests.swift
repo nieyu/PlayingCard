@@ -4,14 +4,13 @@ import XCTest
 class PlayingCardTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Use XCTAssert and related functions to verify your tests produce the correct
+        // results.
         XCTAssertEqual(PlayingCard().text, "Hello, World!")
     }
 
 
-    static var allTests : [(String, (PlayingCardTests) -> () throws -> Void)] {
-        return [
-            ("testExample", testExample),
-        ]
-    }
+    static var allTests = [
+        ("testExample", testExample),
+    ]
 }

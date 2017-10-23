@@ -2,5 +2,5 @@ import XCTest
 @testable import PlayingCardTests
 
 XCTMain([
-     testCase(PlayingCardTests.allTests),
+    testCase(PlayingCardTests.allTests),
 ])
