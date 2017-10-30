@@ -10,10 +10,10 @@ public func <(lhs: Suit, rhs: Suit) -> Bool {
     switch (lhs, rhs) {
     case (_, _) where lhs == rhs:
         return false
-        case (.spades, _),
-             (.hearts, .diamonds),
-             (.hearts, .clubs),
-             (.diamonds, .clubs)
+    case (.spades, _),
+         (.hearts, .diamonds),
+         (.hearts, .clubs),
+         (.diamonds, .clubs):
         return false
     default: return false
     }
