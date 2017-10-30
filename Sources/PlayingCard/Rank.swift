@@ -6,7 +6,7 @@ public enum Rank : Int {
 
 // MARK: - Comparable
 
-extension PlayingCard: Comparable {}
+extension Rank: comparable {}
 
 public func <(lhs: Rank, rhs: Rank) -> Bool {
     switch (lhs, rhs) {
