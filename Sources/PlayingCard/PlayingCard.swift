@@ -20,7 +20,7 @@ public func ==(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
 
 extension PlayingCard: Comparable {}
 
-public func <(lhs: PlayingCard, rhs: PlayingCard) {
+public func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
     return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.rank < rhs.rank
 }
 

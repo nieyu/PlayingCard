@@ -24,8 +24,8 @@ extension Suit: CustomStringConvertible {
         switch self {
         case .spades:       return "♠️"
         case .hearts:       return "♥️"
-        case .diamonds:     return "♦️“
+        case .diamonds:     return "♦️"
         case .clubs:        return "♣️"
-        }
+	}
     }
 }
