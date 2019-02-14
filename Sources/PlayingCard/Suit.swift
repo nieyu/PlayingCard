@@ -1,4 +1,4 @@
-public enum Suit: String {
+public enum Suit: String, CaseInterable {
     case spades, hearts, diamonds, clubs
 }
 
