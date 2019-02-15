@@ -28,6 +28,6 @@ public func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
 
 extension PlayingCard: CustomStringConvertible {
     public var description: String {
-        return "\(suit)\(rank)"
+        return "\(suit) \(rank)"
     }
 }

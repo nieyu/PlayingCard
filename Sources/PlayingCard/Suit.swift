@@ -1,4 +1,4 @@
-public enum Suit: String, CaseInterable {
+public enum Suit: String, CaseIterable {
     case spades, hearts, diamonds, clubs
 }
 
@@ -15,7 +15,7 @@ public func <(lhs: Suit, rhs: Suit) -> Bool {
          (.hearts, .clubs),
          (.diamonds, .clubs):
         return false
-    default: return false
+    default: return true
     }
 }
 
